@@ -1,9 +1,15 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMoveRB : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    public float moveSpeed = 200f;
     public float rotationSpeed = 100f;
+
+    Rigidbody rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -14,7 +20,8 @@ public class PlayerController : MonoBehaviour
         float xSpeed = xInput * rotationSpeed * Time.deltaTime;
         float zSpeed = zInput * moveSpeed * Time.deltaTime;
 
-        transform.Translate(0, 0, zSpeed);
+        //transform.Translate(0, 0, zSpeed);
         transform.Rotate(0, xSpeed, 0);
+        rb.linearVelocity = zSpeed * transform.forward;
     }
 }
