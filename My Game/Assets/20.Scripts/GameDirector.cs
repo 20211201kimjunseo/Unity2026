@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameDirector : MonoBehaviour
 {
@@ -12,8 +13,12 @@ public class GameDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (time < 0) return;
-
+        if (time < 0)
+        {
+            PlayerPrefs.SetInt("Score", point);
+            SceneManager.LoadScene("Result");
+            return;
+        }
         time -= Time.deltaTime;
         timeText.GetComponent<TextMeshProUGUI>().text =
             "Time : " + time.ToString("F1");

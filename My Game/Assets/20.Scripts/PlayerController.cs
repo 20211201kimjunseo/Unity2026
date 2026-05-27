@@ -38,15 +38,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (isHit) return;
+
         if (other.gameObject.tag == "Apple")
         {
-            Debug.Log("사과를 잡았다.");
+            Debug.Log("사과를 잡았다!!");
             aud.PlayOneShot(appleSE);
             director.GetComponent<GameDirector>().GetApple();
         }
         else if (other.gameObject.tag == "Bomb")
         {
-            Debug.Log("폭탄을 잡았다.");
+            Debug.Log("폭탄에 맞았다!!");
             aud.PlayOneShot(bombSE);
             director.GetComponent<GameDirector>().GetBomb();
             isHit = true;
