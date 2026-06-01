@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &87229719
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +209,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!1 &144665716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144665717}
+  - component: {fileID: 144665718}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &144665717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144665716}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.28192276, y: 0, z: 0, w: 0.95943713}
+  m_LocalPosition: {x: 0.58, y: 3.3, z: 4.25}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 442396106}
+  m_LocalEulerAnglesHint: {x: -32.75, y: 0, z: 0}
+--- !u!114 &144665718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144665716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 0.2
+  color: {r: 0, g: 0.02998209, b: 1, a: 1}
 --- !u!1 &287324195
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &435633016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -539,6 +591,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: af3283e0fb5060d4ca462d7ad32163c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 287324198}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: af3283e0fb5060d4ca462d7ad32163c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 144665717}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af3283e0fb5060d4ca462d7ad32163c8, type: 3}
       insertIndex: -1
@@ -599,6 +654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &631269946
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &806061544
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &914417853
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1042970349
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1142224962
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1230834381
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1356060117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1538053654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1646137055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1692010530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,6 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1709530819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1827380180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1878466090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1891329018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1981847759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1997023840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,6 +1631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2031701724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMoveRB
   moveSpeed: 500
-  rotationSpeed: 100
+  rotationSpeed: 20
 --- !u!114 &2031701730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1702,6 +1791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062553f8375e4a347badf88e05ce3266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetPosition
+  size: 1
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2048149406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af3283e0fb5060d4ca462d7ad32163c8, type: 3}
@@ -1770,6 +1861,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 2
+  rotateSpeed: 2
+  shootingForce: 500
+  shootingDelay: 1.5
+  bamsongiPrefab: {fileID: 948265606866717122, guid: 42d84a4527f197d44a0720f3f3f11241, type: 3}
+  shootingPoint: {fileID: 144665717}
 --- !u!1001 &6355661121596445824
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,13 +1,23 @@
+using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 2.0f;
+    public float rotateSpeed = 20.0f;
+    public float shootingForce = 500f;
+    public float shootingDelay = 1.5f;
+
+    public GameObject bamsongiPrefab;
+    public Transform shootingPoint; 
 
     Rigidbody rb;
     Animator anim;
 
     Vector3 moveDirection;
+
+    float xInput;
+    float zInput;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,12 +30,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xInput = Input.GetAxisRaw("Horizontal");
-        float zInput = Input.GetAxisRaw("Vertical");
+        xInput = Input.GetAxisRaw("Horizontal");
+        zInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger("Fire");
+            StartCoroutine(Shooting());
             return;
         }
 
@@ -37,15 +48,38 @@ public class Player : MonoBehaviour
             moveDirection.Normalize();
             anim.SetBool("IsWalking", true);
 
+            Vector3 move = new Vector3(0, 0, zInput);
+
             //transform.forward = moveDirection;  // Rotation
 
+            Rotate();
+
             rb.MovePosition(rb.position +
-                moveDirection * moveSpeed * Time.deltaTime);
+                move * moveSpeed * Time.deltaTime);
 
         }
         else
         {
             anim.SetBool("IsWalking", false);
         }
+    }
+
+    void Rotate()
+    {
+        float rotSpeed = xInput * rotateSpeed * Time.deltaTime;
+        rb.rotation =Quaternion.Euler(0, rotSpeed, 0) *
+            rb.rotation;
+    }
+
+    IEnumerator Shooting()
+    {
+        yield return new WaitForSeconds(shootingDelay);
+
+        GameObject bamsongi = Instantiate(bamsongiPrefab,
+            shootingPoint.position,
+            shootingPoint.rotation);
+
+        Vector3 dir = shootingPoint.forward * shootingForce;
+        bamsongi.GetComponent<Bamsongicontroller>().Shoot(dir);
     }
 }
