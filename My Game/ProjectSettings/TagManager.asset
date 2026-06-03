@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Bomb
   - Apple
+  - star
+  - Star
+  - Magnet
+  - ExtraLife
+  - SuperBomb
   layers:
   - Default
   - TransparentFX
@@ -14,10 +19,10 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
-  - 
+  - Star
+  - Magnet
+  - ExtraLife
+  - SuperBomb
   - 
   - 
   - 
